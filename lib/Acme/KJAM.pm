@@ -10,11 +10,11 @@ Acme::KJAM - The great new Acme::KJAM!
 
 =head1 VERSION
 
-Version 0.02_02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02_02';
+our $VERSION = '0.03';
 
 
 =head1 SYNOPSIS
@@ -35,11 +35,16 @@ if you don't export anything, such as for a purely object-oriented module.
 
 =head1 SUBROUTINES/METHODS
 
-=head2 function1
+=head2 sum 
+
+Returns the sum of the numbers
 
 =cut
 
-sub function1 {
+sub sum {
+    my $n = shift;
+    my $zero = 0;
+	return $zero + $n;
 }
 
 =head2 function2
